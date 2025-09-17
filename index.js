@@ -85,9 +85,13 @@ if (!SakhileDumisaBioContext) {
   process.exit(1);
 }
 
+app.get("/", (req, res) => {
+  res.json({ status: "OK", message: "API is running!" });
+});
+
 // Health check
 app.get("/health", (req, res) => {
-  res.json({ status: "OK", message: "Server is running!" });
+  res.json({ status: "OK", message: "API is running!" });
 });
 
 // Protect the AI endpoint with API key authentication
