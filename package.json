@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-ai-agent",
+  "version": "1.0.0",
+  "description": "A secure API server for the portfolio AI agent",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "ai",
+    "portfolio"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "openai": "^4.26.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
